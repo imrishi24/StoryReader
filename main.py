@@ -3,7 +3,8 @@ from time import sleep
 import pyttsx3 #pip install pyttsx3
 import PyPDF2 #pip install PyPDF2
 
-story = open('lucy.pdf', 'rb') #Name of your script make sure it's in pdf format
+book=input("Enter the name of book with pdf extension")
+story = open(book, 'rb') #Name of your script make sure it's in pdf format
 pdfReader = PyPDF2.PdfFileReader(story)
 pages = pdfReader.numPages
 engine = pyttsx3.init()
