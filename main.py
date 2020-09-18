@@ -9,7 +9,7 @@ pdfReader = PyPDF2.PdfFileReader(story)
 pages = pdfReader.numPages
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id) #For male voice change the value as
+engine.setProperty('voice', voices[1].id)
 
 for num in range(0, pages):
     page = pdfReader.getPage(num)
